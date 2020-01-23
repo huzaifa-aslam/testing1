@@ -1,0 +1,20 @@
+sudo apt-get install docker.io
+docker --version
+docker info
+docker version
+docker image pull alpine:latest
+docker image ls
+docker image rm alpine:latest
+docker image -it aamirpinger/hellowrld sh
+sudo docker container ls
+ctrl+p+q 4 passive quit
+sudo docker container stop container-name 
+sudo docker ps -a
+sudo docker container start con-name
+sudo docker container stop con-name
+sudo docker container rm con-name
+sudo docker run -d --name con-name aamirpinger/helloworld   //con=container
+sudo docker exec -it con-name sh
+// to run app in browser
+sudo docker run -d -p 9000:80 aamirpinger/helloworld
+
